@@ -1367,7 +1367,7 @@ const DISCORD_HEADERS = (token) => ({
   'X-Discord-Timezone': 'Asia/Saigon',
 });
 
-async function discordGet(token, path, version = 'v10') {
+async function discordGet(token, path, version = 'v9') {
   const res = await fetch(`https://discord.com/api/${version}${path}`, {
     headers: DISCORD_HEADERS(token)
   });
@@ -1378,7 +1378,7 @@ async function discordGet(token, path, version = 'v10') {
   return res.json();
 }
 
-async function discordPost(token, path, body, version = 'v10') {
+async function discordPost(token, path, body, version = 'v9') {
   const res = await fetch(`https://discord.com/api/${version}${path}`, {
     method: 'POST',
     headers: DISCORD_HEADERS(token),
