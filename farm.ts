@@ -223,6 +223,8 @@ app.once(
 				});
 				console.log(summaryTbl.toString());
 			}
+			process.exit(0);
+			
 			return;
 		}
 
@@ -266,6 +268,9 @@ app.once(
 
 		draw(data.user);
 		report(data.user, results);
+
+		// All quests completed -> exit
+		process.exit(0);
 	},
 );
 
