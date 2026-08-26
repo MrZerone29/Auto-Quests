@@ -1,8 +1,6 @@
 name: Run Complete Quest
 
 on:
-  push:
-    branches: ["main"]   # đổi tên nhánh nếu bạn dùng nhánh khác
   workflow_dispatch:      # cho phép bấm chạy thủ công trong tab Actions
 
 jobs:
