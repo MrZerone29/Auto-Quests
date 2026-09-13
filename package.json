@@ -1,6 +1,6 @@
 {
-  "name": "hieutool",
-  "version": "2.0.0",
+  "name": "auto-quest",
+  "version": "4.0.0",
   "description": "Discord Quest Auto Claim",
   "main": "farm.ts",
   "scripts": {
