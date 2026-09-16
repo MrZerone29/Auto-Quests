@@ -1,9 +1,9 @@
 import { GatewayDispatchEvents } from 'discord-api-types/v10';
 import chalk from 'chalk';
 import Table from 'cli-table3';
-import { HieuTool, Quest, TaskType } from './src/engine';
+import { AutoQuest, Quest, TaskType } from './src/engine';
 
-const app = new HieuTool(process.env.TOKEN as string);
+const app = new AutoQuest(process.env.TOKEN as string);
 
 const BANNER = `
 ${chalk.hex('#FF6B6B')('   __  __')}${chalk.hex('#FF8E53')('   ____')}${chalk.hex('#FECA57')('   ______')}${chalk.hex('#48DBFB')('   __  __')}${chalk.hex('#FF9FF3')('   ______')}${chalk.hex('#54A0FF')('   ____')}${chalk.hex('#5F27CD')('    ____')}${chalk.hex('#01A3A4')('    __ ')}
