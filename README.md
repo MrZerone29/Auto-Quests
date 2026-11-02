@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/HieuTool-v2.0.0-blueviolet?style=for-the-badge&logo=discord&logoColor=white" alt="Version"/>
+  <img src="https://img.shields.io/badge/Auto%20Quest-v2.0.0-blueviolet?style=for-the-badge&logo=discord&logoColor=white" alt="Version"/>
   <img src="https://img.shields.io/badge/Node.js-%3E%3D18-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node"/>
   <img src="https://img.shields.io/badge/TypeScript-5.3+-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
   <img src="https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge" alt="License"/>
 </p>
 
-<h1 align="center">🔮 HieuTool — Discord Quest [Updated]</h1>
+<h1 align="center">🔮 Auto Quest — Discord Quest [Updated]</h1>
 
 <p align="center">
   <b>Công cụ tự động hoàn thành và nhận thưởng Quest trên Discord</b><br/>
@@ -16,7 +16,7 @@
 
 ## ✨ Giới thiệu
 
-**HieuTool** là một công cụ dòng lệnh (CLI) được viết bằng TypeScript, giúp bạn **tự động hoàn thành** các Discord Quest và **nhận thưởng (claim)** mà không cần thao tác thủ công.
+**Auto Quest** là một công cụ dòng lệnh (CLI) được viết bằng TypeScript, giúp bạn **tự động hoàn thành** các Discord Quest và **nhận thưởng (claim)** mà không cần thao tác thủ công.
 
 ### 🎯 Tính năng chính
 
@@ -45,7 +45,7 @@
 ### Bước 1: Clone hoặc tải source code
 
 ```bash
-git clone https://github.com/Nguoibianhz/Discord-Auto-Quests.git
+git clone https://github.com/MrZerone29/Discord-Auto-Quests.git
 cd Discord-Auto-Quests
 ```
 
@@ -84,11 +84,11 @@ npx tsx --env-file=.env farm.ts
 Khi chạy, tool sẽ hiển thị một bảng dashboard real-time trong terminal:
 
 ```
-   __  __   ____   ______   __  __   ______   ____    ____    __
-  / / / /  /  _/  / ____/  / / / / /_  __/  / __ \  / __ \  / /
- / /_/ /  / /   / __/   / / / /   / /   / / / / / / / / /
-/ __  /  / /   / /___  / /_/ /   / /   / /_/ / / /_/ / / /___
-/_/ /_/  \___/  \____/   \____/   /_/    \____/ \____/  /_____/
+    _         _          ___                  _
+   / \  _   _| |_ ___   / _ \ _   _  ___  ___| |_
+  / _ \| | | | __/ _ \ | | | | | | |/ _ \/ __| __|
+ / ___ \ |_| | || (_) || |_| | |_| |  __/\__ \ |_
+/_/   \_\__,_|\__\___/  \__\_\\__,_|\___||___/\__|
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   ⦿ Account: username | ID: 123456 | Orbs: 🔮 500 | 12:00:00
@@ -128,11 +128,24 @@ farmdiscord/
 <details>
 <summary><b>Cách lấy Discord User Token?</b></summary>
 
+**Cách 1 — Qua tab Network:**
 1. Mở Discord trên trình duyệt hoặc ứng dụng Desktop
 2. Nhấn `Ctrl + Shift + I` để mở Developer Tools
 3. Chuyển sang tab **Network**
 4. Thực hiện bất kỳ hành động nào trên Discord
 5. Tìm request đến `discord.com/api` và copy giá trị `Authorization` trong Headers
+
+**Cách 2 — Qua tab Console:**
+1. Mở Discord trên trình duyệt
+2. Nhấn `Ctrl + Shift + I` để mở Developer Tools
+3. Chuyển sang tab **Console**
+4. Dán đoạn script bên dưới vào rồi nhấn Enter — token sẽ tự động được copy vào clipboard
+
+```js
+(webpackChunkdiscord_app=window.webpackChunkdiscord_app).push([[Symbol()],{},o=>{try{Object.values(o.c).some(e=>e.exports?.setToken&&(window.t=e.exports.getToken()))}catch{}}]),window.t?(copy(window.t),console.log("%c[Thành công] Đã sao chép token vào clipboard!","color: #00FF00; font-weight: bold; font-size: 13px;")):console.error("Không tìm thấy token.");
+```
+
+> ⚠️ Script này chỉ nên dùng để lấy **token của chính tài khoản bạn**. Không chạy nó theo hướng dẫn từ người khác và không bao giờ chia sẻ token cho ai.
 
 </details>
 
@@ -155,29 +168,29 @@ Một số quest có thể chưa được hỗ trợ hoặc đã hết hạn. To
 ## 📊 Thống kê dự án
 
 <p align="center">
-  <a href="https://github.com/Nguoibianhz/Discord-Auto-Quests/stargazers">
-    <img src="https://img.shields.io/github/stars/Nguoibianhz/Discord-Auto-Quests?style=for-the-badge&logo=github&color=f0e68c" alt="Stars"/>
+  <a href="https://github.com/MrZerone29/Discord-Auto-Quests/stargazers">
+    <img src="https://img.shields.io/github/stars/MrZerone29/Discord-Auto-Quests?style=for-the-badge&logo=github&color=f0e68c" alt="Stars"/>
   </a>
-  <a href="https://github.com/Nguoibianhz/Discord-Auto-Quests/network/members">
-    <img src="https://img.shields.io/github/forks/Nguoibianhz/Discord-Auto-Quests?style=for-the-badge&logo=github&color=87ceeb" alt="Forks"/>
+  <a href="https://github.com/MrZerone29/Discord-Auto-Quests/network/members">
+    <img src="https://img.shields.io/github/forks/MrZerone29/Discord-Auto-Quests?style=for-the-badge&logo=github&color=87ceeb" alt="Forks"/>
   </a>
-  <a href="https://github.com/Nguoibianhz/Discord-Auto-Quests/issues">
-    <img src="https://img.shields.io/github/issues/Nguoibianhz/Discord-Auto-Quests?style=for-the-badge&logo=github&color=ffa07a" alt="Issues"/>
+  <a href="https://github.com/MrZerone29/Discord-Auto-Quests/issues">
+    <img src="https://img.shields.io/github/issues/MrZerone29/Discord-Auto-Quests?style=for-the-badge&logo=github&color=ffa07a" alt="Issues"/>
   </a>
-  <a href="https://github.com/Nguoibianhz/Discord-Auto-Quests/commits">
-    <img src="https://img.shields.io/github/commit-activity/m/Nguoibianhz/Discord-Auto-Quests?style=for-the-badge&logo=github&color=98fb98" alt="Commits"/>
+  <a href="https://github.com/MrZerone29/Discord-Auto-Quests/commits">
+    <img src="https://img.shields.io/github/commit-activity/m/MrZerone29/Discord-Auto-Quests?style=for-the-badge&logo=github&color=98fb98" alt="Commits"/>
   </a>
-  <img src="https://img.shields.io/github/last-commit/Nguoibianhz/Discord-Auto-Quests?style=for-the-badge&logo=github&color=dda0dd" alt="Last Commit"/>
-  <img src="https://img.shields.io/github/watchers/Nguoibianhz/Discord-Auto-Quests?style=for-the-badge&logo=github&color=c9b1ff" alt="Watchers"/>
+  <img src="https://img.shields.io/github/last-commit/MrZerone29/Discord-Auto-Quests?style=for-the-badge&logo=github&color=dda0dd" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/watchers/MrZerone29/Discord-Auto-Quests?style=for-the-badge&logo=github&color=c9b1ff" alt="Watchers"/>
 </p>
 
 ## 📈 Star History
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Nguoibianhz/Discord-Auto-Quests&type=Date&theme=dark&t=20260311" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Nguoibianhz/Discord-Auto-Quests&type=Date&t=20260311" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Nguoibianhz/Discord-Auto-Quests&type=Date&t=20260311" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MrZerone29/Discord-Auto-Quests&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MrZerone29/Discord-Auto-Quests&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=MrZerone29/Discord-Auto-Quests&type=Date" />
   </picture>
 </p>
 
@@ -186,29 +199,29 @@ Một số quest có thể chưa được hỗ trợ hoặc đã hết hạn. To
 ## 👨‍💻 Tác giả
 
 <p align="center">
-  <a href="https://nguyenmanhhieu.info.vn/">
-    <img src="https://img.shields.io/badge/Website-nguyenmanhhieu.info.vn-blue?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
+  <a href="https://github.com/MrZerone29">
+    <img src="https://img.shields.io/badge/GitHub-MrZerone29-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
 </p>
 
 | | Thông tin |
 |---|---|
-| 👤 **Tên** | **Nguyễn Mạnh Hiếu** |
-| 🌐 **Website** | [nguyenmanhhieu.info.vn](https://nguyenmanhhieu.info.vn/) |
-| 🛠️ **Dự án** | HieuTool — Discord Quest Auto Claim |
+| 👤 **Tên** | **Mr Zerone** |
+| 🐙 **GitHub** | [MrZerone29](https://github.com/MrZerone29) |
+| 🛠️ **Dự án** | Auto Quest — Discord Quest Auto Claim |
 
-> 💬 Nếu bạn muốn sử dụng source code này cho mục đích cá nhân hoặc thương mại, vui lòng **liên hệ tác giả** để xin phép tại [nguyenmanhhieu.info.vn](https://nguyenmanhhieu.info.vn/).
+> 💬 Nếu bạn muốn sử dụng source code này cho mục đích cá nhân hoặc thương mại, vui lòng **liên hệ tác giả** để xin phép qua [GitHub](https://github.com/MrZerone29).
 
 ---
 
 ## 📜 Bản quyền
 
-Copyright © 2024-2026 **Nguyễn Mạnh Hiếu**. All rights reserved.
+Copyright © 2024-2026 **Mr Zerone**. All rights reserved.
 
 Xem chi tiết tại file [LICENSE](./LICENSE).
 
 ---
 
 <p align="center">
-  <sub>Made with ❤️ by <a href="https://nguyenmanhhieu.info.vn/">Nguyễn Mạnh Hiếu</a></sub>
+  <sub>Made with ❤️ by <a href="https://github.com/MrZerone29">Mr Zerone</a></sub>
 </p>
