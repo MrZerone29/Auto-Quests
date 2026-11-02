@@ -6,11 +6,11 @@ import { AutoQuest, Quest, TaskType } from './src/engine';
 const app = new AutoQuest(process.env.TOKEN as string);
 
 const BANNER = `
-${chalk.hex('#FF6B6B')('   __  __')}${chalk.hex('#FF8E53')('   ____')}${chalk.hex('#FECA57')('   ______')}${chalk.hex('#48DBFB')('   __  __')}${chalk.hex('#FF9FF3')('   ______')}${chalk.hex('#54A0FF')('   ____')}${chalk.hex('#5F27CD')('    ____')}${chalk.hex('#01A3A4')('    __ ')}
-${chalk.hex('#FF6B6B')('  / / / /')}${chalk.hex('#FF8E53')('  /  _/')}${chalk.hex('#FECA57')('  / ____/')}${chalk.hex('#48DBFB')('  / / / /')}${chalk.hex('#FF9FF3')(' /_  __/')}${chalk.hex('#54A0FF')('  / __ \\\\')}${chalk.hex('#5F27CD')('  / __ \\\\')}${chalk.hex('#01A3A4')('  / / ')}
-${chalk.hex('#FF6B6B')(' / /_/ /')}${chalk.hex('#FF8E53')('  / /')}${chalk.hex('#FECA57')('   / __/')}${chalk.hex('#48DBFB')('   / / / /')}${chalk.hex('#FF9FF3')('   / /')}${chalk.hex('#54A0FF')('   / / / /')}${chalk.hex('#5F27CD')(' / / / /')}${chalk.hex('#01A3A4')(' / /  ')}
-${chalk.hex('#FF6B6B')('/ __  /')}${chalk.hex('#FF8E53')('  / /')}${chalk.hex('#FECA57')('   / /___')}${chalk.hex('#48DBFB')('  / /_/ /')}${chalk.hex('#FF9FF3')('   / /')}${chalk.hex('#54A0FF')('   / /_/ /')}${chalk.hex('#5F27CD')(' / /_/ /')}${chalk.hex('#01A3A4')(' / /___')}
-${chalk.hex('#FF6B6B')('/_/ /_/')}${chalk.hex('#FF8E53')('  \\\\___/')}${chalk.hex('#FECA57')('  \\\\____/')}${chalk.hex('#48DBFB')('   \\\\____/')}${chalk.hex('#FF9FF3')('   /_/')}${chalk.hex('#54A0FF')('    \\\\____/')}${chalk.hex('#5F27CD')(' \\\\____/')}${chalk.hex('#01A3A4')('  /_____/')}
+${chalk.hex('#FF6B6B')(`    _         _          ___                  _`)}
+${chalk.hex('#FF8E53')(`   / \\  _   _| |_ ___   / _ \\ _   _  ___  ___| |_`)}
+${chalk.hex('#FECA57')(`  / _ \\| | | | __/ _ \\ | | | | | | |/ _ \\/ __| __|`)}
+${chalk.hex('#48DBFB')(` / ___ \\ |_| | || (_) || |_| | |_| |  __/\\__ \\ |_`)}
+${chalk.hex('#5F27CD')(`/_/   \\_\\__,_|\\__\\___/  \\__\\_\\\\__,_|\\___||___/\\__|`)}
 `;
 
 const DIVIDER = chalk.hex('#2C3E50')('━'.repeat(90));
