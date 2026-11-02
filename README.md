@@ -117,7 +117,6 @@ farmdiscord/
 ├── .env              # Cấu hình token (không commit lên git!)
 ├── package.json      # Dependencies & scripts
 ├── tsconfig.json     # TypeScript config
-├── LICENSE           # Giấy phép sử dụng
 └── README.md         # Tài liệu bạn đang đọc
 ```
 
